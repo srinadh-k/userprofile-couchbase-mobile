@@ -365,7 +365,7 @@ extension DatabaseManager {
             print(#function)
             _oneshotPushPullRepl?.removeChangeListener(withToken:  oneshotPushPullReplListener)
             _oneshotPushPullRepl = nil
-            _oneshotPushPullRepl = nil
+            _oneshotPushPullReplListener = nil
         }
         _oneshotPushPullRepl?.stop()
         //end::replicationstop[]
